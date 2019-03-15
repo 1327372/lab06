@@ -1,6 +1,8 @@
 package quaziismydad_lab6;
 
 public class quaziismydad_lab6_q1 {
+	
+	// Copying me gets us both zero. Just use this as inspiration.
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
