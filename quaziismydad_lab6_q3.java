@@ -1,11 +1,11 @@
-package quaziismydad_lab6;
+package quazismydad_lab6;
 
 import java.util.Scanner;
 
-public class quaziismydad_lab6_q3 {
+public class quazismydad_lab6_q3 {
 
 	// Copying me gets us both zero. Just use this as inspiration.
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// Declare required variables.
@@ -19,7 +19,7 @@ public class quaziismydad_lab6_q3 {
 		Scanner inputScanner = new Scanner(System.in);
 
 		// Print the header.
-		printHeader(6, 3, "quaziismydad", "", "Simple card game using arrays");
+		printHeader(6, 3, "quazismydad", "", "Simple card game using arrays");
 
 		// Loop the program.
 		while (true) {
@@ -46,7 +46,7 @@ public class quaziismydad_lab6_q3 {
 					currentVal = currentVal * 10 + ((int) (currentCard.charAt(1)));
 				}
 				// Ask the user and get their input.
-				System.out.println("Is " + showCard(currentCard) + " higher or lower then " + showCard(lastCard) + "?");
+				System.out.println("Is the next card higher or lower then " + showCard(lastCard) + "?");
 				// Loop to get a valid input.
 				do {
 					System.out.println("Enter 0 for lower, 1 for higher, and 9 to exit.");
@@ -61,22 +61,24 @@ public class quaziismydad_lab6_q3 {
 				switch (userInput) {
 				case 0:
 					if (currentVal < lastVal) {
-						System.out.println("Correct!");
+						System.out.println("Correct! The card was: " + showCard(currentCard));
 						totalCorrect++;
 					} else if (currentVal == lastVal) {
-						System.out.println("The cards are of equal value.");
+						System.out.println("The cards are of equal value. The card was: " + showCard(currentCard));
 					} else {
-						System.out.println("Incorrect.");
+						System.out.println("Incorrect. The card was: " + showCard(currentCard));
 					}
 					break;
 				case 1:
 					if (currentVal > lastVal) {
-						System.out.println("Correct!");
+						System.out.println("Correct! The card was: " + showCard(currentCard));
 						totalCorrect++;
 					} else if (currentVal == lastVal) {
-						System.out.println("The cards are of equal value.");
+						System.out.println("The cards are of equal value. User will be given a point. The card was: "
+								+ showCard(currentCard));
+						totalCorrect++;
 					} else {
-						System.out.println("Incorrect.");
+						System.out.println("Incorrect. The card was: " + showCard(currentCard));
 					}
 					break;
 				case 9:
