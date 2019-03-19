@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class quaziismydad_lab6_q3 {
 
-	// Capying me gets us both zero. Just use this as inspiration.
+	// Copying me gets us both zero. Just use this as inspiration.
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
