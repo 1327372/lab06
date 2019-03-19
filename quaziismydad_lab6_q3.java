@@ -104,11 +104,6 @@ public class quaziismydad_lab6_q3 {
 			// If not, reset the deck.
 			System.out.println("Resetting the deck...");
 		}
-
-		// System.out.println("");
-		// for (int i = 0; i < 52; i++) {
-		// System.out.print(deck[i] + " ");
-		// }
 	}
 
 	// Method to generate the header.
@@ -155,10 +150,6 @@ public class quaziismydad_lab6_q3 {
 		for (int m = 39; m < 52; m++) {
 			deck[m] = ((m - 38) + suits[3]);
 		}
-		// Index through all the cards and send them through the show value method.
-		// for (int p = 0; p < 52; p++) {
-		// deck[p] = showCard(deck[p]);
-		// }
 	}
 
 	// Method to correct the value of the cards.
