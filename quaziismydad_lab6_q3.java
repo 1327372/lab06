@@ -1,17 +1,17 @@
-package quazismydad_lab6;
+package quaziismydad_lab6;
 
 import java.util.Scanner;
 
-public class quazismydad_lab6_q3 {
+public class quaziismydad_lab6_q3 {
 
-	// Copying me gets us both zero. Just use this as inspiration.
+	// Capying me gets us both zero. Just use this as inspiration.
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// Declare required variables.
 		String deck[] = new String[52];
 		String suits[] = { "H", "C", "D", "S" };
-		String currentCard = "", lastCard = "";
+		String currentCard = "", lastCard = "", currentNum = "", lastNum = "";
 		int userInput = 0, totalCorrect = 0;
 		int currentVal = 0, lastVal = 0;
 
@@ -19,7 +19,7 @@ public class quazismydad_lab6_q3 {
 		Scanner inputScanner = new Scanner(System.in);
 
 		// Print the header.
-		printHeader(6, 3, "quazismydad", "", "Simple card game using arrays");
+		printHeader(6, 3, "Matthew", "Venner", "Simple card game using arrays");
 
 		// Loop the program.
 		while (true) {
@@ -29,31 +29,36 @@ public class quazismydad_lab6_q3 {
 			populateDeck(deck, suits);
 			// Draw the first card
 			lastCard = drawCard(deck);
+
 			System.out.println("\nYour first card is: " + showCard(lastCard));
 			// Loop to accomplish the rest of the program.
 			for (int i = 0; i < 51; i++) {
 				// Draw a new card.
 				currentCard = drawCard(deck);
-				// Convert the numbers to integers to ease comparison.
-				lastVal = (int) (lastCard.charAt(0));
-				if (lastCard.charAt(1) != 'H' && lastCard.charAt(1) != 'C' && lastCard.charAt(1) != 'D'
-						&& lastCard.charAt(1) != 'S') {
-					lastVal = lastVal * 10 + ((int) (lastCard.charAt(1)));
-				}
-				currentVal = (int) (currentCard.charAt(0));
-				if (currentCard.charAt(1) != 'H' && currentCard.charAt(1) != 'C' && currentCard.charAt(1) != 'D'
-						&& currentCard.charAt(1) != 'S') {
-					currentVal = currentVal * 10 + ((int) (currentCard.charAt(1)));
-				}
 				// Ask the user and get their input.
 				System.out.println("Is the next card higher or lower then " + showCard(lastCard) + "?");
+				// Get the values of the integers.
+				if (lastCard.length() == 2) {
+					lastNum = lastCard.substring(0, 1);
+					lastVal = Integer.parseInt(lastNum);
+				} else if (lastCard.length() == 3) {
+					lastNum = lastCard.substring(0, 2);
+					lastVal = Integer.parseInt(lastNum);
+				}
+				if (currentCard.length() == 2) {
+					currentNum = currentCard.substring(0, 1);
+					currentVal = Integer.parseInt(currentNum);
+				} else if (currentCard.length() == 3) {
+					currentNum = currentCard.substring(0, 2);
+					currentVal = Integer.parseInt(currentNum);
+				}
+				// The actual card values are pretty messed up but they still serve their
+				// purpose. Un-comment the below code to burn your eyes.
+				// System.out.println(currentVal);
+				// System.out.println(lastVal);
 				// Loop to get a valid input.
 				do {
 					System.out.println("Enter 0 for lower, 1 for higher, and 9 to exit.");
-					// The actual card values are pretty messed up but they still serve their
-					// purpose. Un-comment the below code to burn your eyes.
-					// System.out.println(currentVal);
-					// System.out.println(lastVal);
 					userInput = inputScanner.nextInt();
 				} while (userInput != 0 && userInput != 1 && userInput != 9);
 
