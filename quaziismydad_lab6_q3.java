@@ -19,7 +19,7 @@ public class quaziismydad_lab6_q3 {
 		Scanner inputScanner = new Scanner(System.in);
 
 		// Print the header.
-		printHeader(6, 3, "Matthew", "Venner", "Simple card game using arrays");
+		printHeader(6, 3, "quaziismydad", "", "Simple card game using arrays");
 
 		// Loop the program.
 		while (true) {
