@@ -1,8 +1,8 @@
-package quaziismydad_lab6;
+package 1327372_lab6;
 
 import java.util.Scanner;
 
-public class quaziismydad_lab6_q3 {
+public class 1327372_lab6_q3 {
 
 	// Copying me gets us both zero. Just use this as inspiration.
 	
@@ -19,7 +19,7 @@ public class quaziismydad_lab6_q3 {
 		Scanner inputScanner = new Scanner(System.in);
 
 		// Print the header.
-		printHeader(6, 3, "quaziismydad", "", "Simple card game using arrays");
+		printHeader(6, 3, "1327372", "", "Simple card game using arrays");
 
 		// Loop the program.
 		while (true) {
