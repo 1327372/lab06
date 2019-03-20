@@ -1,6 +1,6 @@
-package quaziismydad_lab6;
+package 1327372_lab6;
 
-public class quaziismydad_lab6_q1 {
+public class 1327372_lab6_q1 {
 	
 	// Copying me gets us both zero. Just use this as inspiration.
 
