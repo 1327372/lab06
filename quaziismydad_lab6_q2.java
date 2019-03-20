@@ -1,6 +1,6 @@
-package quaziismydad_lab6;
+package 1327372_lab6;
 import java.util.Scanner;
-public class quaziismydad_lab6_q2 {
+public class 1327372_lab6_q2 {
 
 	// Copying me gets us both zero. Just use this as inspiration.
 	
