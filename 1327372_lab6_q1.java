@@ -2,6 +2,7 @@ package 1327372_lab6;
 
 public class 1327372_lab6_q1 {
 	
+	
 	// Copying me gets us both zero. Just use this as inspiration.
 
 	public static void main(String[] args) {
